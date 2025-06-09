@@ -4,3 +4,5 @@ uvicorn
 python-dotenv
 email-validator
 python-multipart
+jinja2
+pydantic
