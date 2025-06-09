@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en"> <head> <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Pricing Plans | KX Studios</title> 
+    <meta name="description" content="Affordable pricing plans for web design, social media management, and video production services"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="/frontend/style.css"> 
+    <link rel="stylesheet" href="pricing.css"> 
+</head> 
+<body> 
+    
+    <!-- Header (same as other pages) --> 
+    <header class="header" id="header"> 
+        <div class="container"> 
+            <div class="header-content"> 
+                <a href="/frontend/index.html" class="logo"> 
+                    <img src="/frontend/kx logo.png" id="logo_image" alt="KX Studios Logo"> 
+                    <span class="logo-text">S<span>t</span>udios</span> 
+                </a> 
+                <nav class="nav-desktop"> 
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                    <!--
+                        <li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>
+                    -->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav> 
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Navigation"> 
+                    <span></span> 
+                    <span></span> 
+                    <span></span> 
+                </button> 
+            </div> 
+        </div> 
+    </header>
+    
+<!-- Mobile Navigation (same as other pages) -->
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-container">
+        <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="nav-mobile">
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Pricing Hero Section -->
+<section class="pricing-hero">
+    <div class="container">
+        <div class="pricing-hero-content">
+            <h1 class="reveal-left">Simple, Transparent <span class="highlight">Pricing</span></h1>
+            <p class="reveal-left">Choose the perfect plan for your business needs with no hidden fees</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Main Section -->
+<section class="pricing-main">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title reveal-bottom">Our <span class="highlight">Plans</span></h2>
+            <p class="section-description">Flexible pricing designed to scale with your business</p>
+        </div>
+        
+        <div class="pricing-toggle">
+            <span class="toggle-label">Monthly</span>
+            <label class="switch">
+                <input type="checkbox" id="pricing-toggle">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Annual <span class="discount">(Save 20%)</span></span>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Starter Plan -->
+            <div class="pricing-card reveal-item">
+                <div class="pricing-header">
+                    <h3 class="pricing-tier">Starter</h3>
+                    <div class="pricing-amount">
+                        <span class="price monthly">R2,499</span>
+                        <span class="price annual">R1,999</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="pricing-description">Perfect for small businesses just getting started</p>
+                    <a href="/frontend/contact/contact.html" class="btn btn-outline-primary">Get Started</a>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Custom Website (5 pages)</li>
+                        <li><i class="fas fa-check"></i> Social Media (2 platforms)</li>
+                        <li><i class="fas fa-check"></i> 1 Video per month</li>
+                        <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                        <li><i class="fas fa-check"></i> Monthly Reports</li>
+                        <li class="not-included"><i class="fas fa-times"></i> E-commerce</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Advanced Analytics</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Professional Plan (Featured) -->
+            <div class="pricing-card featured reveal-item">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3 class="pricing-tier">Professional</h3>
+                    <div class="pricing-amount">
+                        <span class="price monthly">R4,999</span>
+                        <span class="price annual">R3,999</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="pricing-description">Ideal for growing businesses</p>
+                    <a href="/frontend/contact/contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Custom Website (10 pages)</li>
+                        <li><i class="fas fa-check"></i> Social Media (4 platforms)</li>
+                        <li><i class="fas fa-check"></i> 2 Videos per month</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check"></i> Bi-weekly Reports</li>
+                        <li><i class="fas fa-check"></i> Basic E-commerce</li>
+                        <li><i class="fas fa-check"></i> Analytics Dashboard</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card reveal-item">
+                <div class="pricing-header">
+                    <h3 class="pricing-tier">Enterprise</h3>
+                    <div class="pricing-amount">
+                        <span class="price monthly">R8,999</span>
+                        <span class="price annual">R7,199</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="pricing-description">Complete solution for established businesses</p>
+                    <a href="/frontend/contact/contact.html" class="btn btn-outline-primary">Get Started</a>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Premium Website (Unlimited)</li>
+                        <li><i class="fas fa-check"></i> Social Media (All platforms)</li>
+                        <li><i class="fas fa-check"></i> 4 Videos per month</li>
+                        <li><i class="fas fa-check"></i> Comprehensive SEO</li>
+                        <li><i class="fas fa-check"></i> Weekly Reports</li>
+                        <li><i class="fas fa-check"></i> Full E-commerce</li>
+                        <li><i class="fas fa-check"></i> Enterprise Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pricing-notice">
+            <p>Need a custom solution? <a href="/frontend/contact/contact.html">Contact us</a> for a tailored plan that fits your specific requirements.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title reveal-bottom">Frequently Asked <span class="highlight">Questions</span></h2>
+            <p class="section-description">Find answers to common questions about our pricing and services</p>
+        </div>
+        
+        <div class="faq-grid">
+            <div class="faq-item reveal-item">
+                <button class="faq-question">
+                    What payment methods do you accept?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and direct bank transfers. All payments are processed securely through our payment gateway.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item reveal-item">
+                <button class="faq-question">
+                    Can I change plans later?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can upgrade or downgrade your plan at any time. When you upgrade, you'll receive a prorated credit for your current plan. Downgrades take effect at the next billing cycle.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item reveal-item">
+                <button class="faq-question">
+                    Is there a contract or long-term commitment?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No, all our plans are month-to-month with no long-term contracts. You can cancel anytime with 30 days notice. Annual plans require a one-year commitment but offer significant savings.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item reveal-item">
+                <button class="faq-question">
+                    What's included in the setup fee?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>The one-time setup fee covers initial consultation, project planning, design concepts, and configuration of your services. This ensures we start your project with a solid foundation.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item reveal-item">
+                <button class="faq-question">
+                    Do you offer discounts for non-profits?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer a 15% discount for registered non-profit organizations. Please contact our sales team with proof of your non-profit status to receive this discount.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item reveal-item">
+                <button class="faq-question">
+                    How does the cancellation process work?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>You can cancel your service by contacting our support team. We require 30 days notice for cancellations. There are no cancellation fees, and you'll have access to services until the end of your billing period.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta pricing-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="reveal-left">Still have questions?</h2>
+            <p class="reveal-left">Our team is ready to help you choose the right plan for your business</p>
+            <a href="/frontend/contact/contact.html" class="btn btn-primary btn-lg reveal-right">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="/frontend/kx logo.png" alt="KX Studios Logo" class="footer-logo-img">
+                        <span class="logo-text">S<span>t</span>udios</span>
+                    </a>
+                    <p class="footer-description">
+                        Helping businesses transform their digital presence since 2015. We specialize in web design, social media management, and video production.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls " class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Video Production & Editing</a></li>
+                        <li><a href="#">SEO & Content Marketing</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-description">Subscribe to our newsletter to receive updates and marketing tips.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 KX Studios. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+<!-- Scripts -->
+<script src="/frontend/script.js"></script>
+<script src="pricing.js"></script>
+</body> </html>

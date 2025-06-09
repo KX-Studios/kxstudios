@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Checkout - Enterprise Plan | KX Studios</title> 
+        <meta name="description" content="Complete your purchase of the Enterprise Plan from KX Studios"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+        <link rel="stylesheet" href="/frontend/style.css"> 
+        <link rel="stylesheet" href="/frontend/checkout/checkout.css"> 
+    </head> 
+
+    <body> 
+        <!-- Header --> 
+         <header class="header" id="header"> 
+            <div class="container"> 
+                <div class="header-content"> 
+                    <a href="/frontend/index.html" class="logo"> 
+                        <img src="/frontend/kx logo.png" id="logo_image" alt="KX Studios Logo"> 
+                        <span class="logo-text">S<span>t</span>udios</span> 
+                    </a> <nav class="nav-desktop"> 
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    </nav> 
+                    <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Navigation"> 
+                        <span></span> 
+                        <span></span> 
+                        <span></span> 
+                    </button> 
+                </div> 
+            </div> 
+        </header>
+
+<!-- Mobile Navigation -->
+<div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-container">
+        <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="nav-mobile">
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Checkout Hero -->
+<section class="checkout-hero enterprise-hero">
+    <div class="container">
+        <div class="checkout-hero-content">
+            <h1 class="reveal-left">Enterprise Solution Setup</h1>
+            <p class="reveal-left">Premium digital ecosystem for large-scale businesses</p>
+            <div class="enterprise-badge">
+                <i class="fas fa-crown"></i> Priority Support Included
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Checkout Main Section -->
+<section class="checkout-main">
+    <div class="container">
+        <div class="enterprise-notice">
+            <i class="fas fa-info-circle"></i>
+            <p>For enterprise clients, we recommend scheduling a consultation call to customize your package. <a href="/frontend/contact/contact.html">Contact our team</a> for personalized service.</p>
+        </div>
+
+        <div class="checkout-grid">
+            <!-- Order Summary -->
+            <div class="order-summary reveal-left">
+                <h2>Enterprise Package</h2>
+                <div class="plan-card enterprise-card">
+                    <div class="plan-header">
+                        <h3>Enterprise Plan</h3>
+                        <div class="plan-price">
+                            <span class="price">R8,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium Website (Unlimited pages)</li>
+                            <li><i class="fas fa-check"></i> Full Social Media Management</li>
+                            <li><i class="fas fa-check"></i> 4 Professional Videos/month</li>
+                            <li><i class="fas fa-check"></i> Comprehensive SEO Strategy</li>
+                            <li><i class="fas fa-check"></i> Weekly Performance Reports</li>
+                            <li><i class="fas fa-check"></i> Advanced E-commerce Solutions</li>
+                            <li><i class="fas fa-check"></i> Enterprise Analytics Dashboard</li>
+                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="billing-options">
+                    <h3>Billing Cycle</h3>
+                    <div class="billing-toggle">
+                        <label class="billing-option">
+                            <input type="radio" name="billing" value="monthly" checked>
+                            <span class="billing-label">Monthly</span>
+                            <span class="billing-price">R8,999/month</span>
+                        </label>
+                        <label class="billing-option">
+                            <input type="radio" name="billing" value="annual">
+                            <span class="billing-label">Annual (Save 20%)</span>
+                            <span class="billing-price">R7,199/month</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="order-total">
+                    <div class="total-row">
+                        <span>Subtotal</span>
+                        <span class="subtotal">R8,999</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Setup Fee</span>
+                        <span>R5,000</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span>Total Due Today</span>
+                        <span class="total-amount">R13,999</span>
+                    </div>
+                </div>
+
+                <div class="enterprise-benefits">
+                    <h3><i class="fas fa-star"></i> Enterprise Benefits</h3>
+                    <ul>
+                        <li>Custom SLA agreements</li>
+                        <li>Quarterly strategy sessions</li>
+                        <li>Dedicated support channel</li>
+                        <li>White-label reporting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Checkout Form -->
+            <div class="checkout-form-container reveal-right">
+                <h2>Enterprise Onboarding</h2>
+                <form id="checkoutForm" class="checkout-form">
+                    <!-- Enterprise Contact -->
+                    <div class="form-section">
+                        <h3>Primary Contact</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Direct Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" id="jobTitle" name="jobTitle" required>
+                        </div>
+                    </div>
+
+                    <!-- Company Information -->
+                    <div class="form-section">
+                        <h3>Company Information</h3>
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" name="companyName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="companySize">Company Size</label>
+                            <select id="companySize" name="companySize" required>
+                                <option value="" disabled selected>Select Size</option>
+                                <option value="50-100">50-100 Employees</option>
+                                <option value="100-500">100-500 Employees</option>
+                                <option value="500-1000">500-1000 Employees</option>
+                                <option value="1000+">1000+ Employees</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vatNumber">VAT Number</label>
+                            <input type="text" id="vatNumber" name="vatNumber" required>
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="form-section">
+                        <h3>Project Requirements</h3>
+                        <div class="form-group">
+                            <label for="projectDescription">Briefly describe your project</label>
+                            <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectGoals">Primary business goals</label>
+                            <textarea id="projectGoals" name="projectGoals" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="launchTimeline">Target launch timeline</label>
+                            <select id="launchTimeline" name="launchTimeline" required>
+                                <option value="" disabled selected>Select Timeline</option>
+                                <option value="1-3">1-3 Months</option>
+                                <option value="3-6">3-6 Months</option>
+                                <option value="6-12">6-12 Months</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Features -->
+                    <div class="form-section">
+                        <h3>Custom Add-ons</h3>
+                        <div class="form-group">
+                            <input type="checkbox" id="dedicatedTeam" name="dedicatedTeam">
+                            <label for="dedicatedTeam">Dedicated Creative Team (+R15,000/month)</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="enterpriseSeo" name="enterpriseSeo">
+                            <label for="enterpriseSeo">Enterprise SEO Package (+R8,000/month)</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="contentStudio" name="contentStudio">
+                            <label for="contentStudio">Content Studio Access (+R12,000/month)</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="trainingSessions" name="trainingSessions">
+                            <label for="trainingSessions">Staff Training Sessions (+R5,000/session)</label>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="form-section">
+                        <h3>Payment Method</h3>
+                        <div class="payment-methods">
+                            <div class="payment-tabs">
+                                <button type="button" class="payment-tab active" data-tab="credit-card">
+                                    <i class="far fa-credit-card"></i> Credit Card
+                                </button>
+                                <button type="button" class="payment-tab" data-tab="bank-transfer">
+                                    <i class="fas fa-university"></i> Bank Transfer
+                                </button>
+                                <button type="button" class="payment-tab" data-tab="invoice">
+                                    <i class="fas fa-file-invoice"></i> Corporate Invoice
+                                </button>
+                            </div>
+
+                            <div class="payment-content active" id="credit-card">
+                                <div class="form-group">
+                                    <label for="cardNumber">Corporate Card Number</label>
+                                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="expiryDate">Expiry Date</label>
+                                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardName">Name on Card</label>
+                                    <input type="text" id="cardName" name="cardName">
+                                </div>
+                            </div>
+
+                            <div class="payment-content" id="bank-transfer">
+                                <div class="bank-info">
+                                    <p>Please use the following bank details for your transfer:</p>
+                                    <ul>
+                                        <li><strong>Bank:</strong> Standard Bank</li>
+                                        <li><strong>Account Name:</strong> KX Studios (Pty) Ltd</li>
+                                        <li><strong>Account Number:</strong> 123456789</li>
+                                        <li><strong>Branch Code:</strong> 012345</li>
+                                        <li><strong>Reference:</strong> Your company name</li>
+                                    </ul>
+                                    <p>Our finance team will contact you within 24 hours of payment receipt.</p>
+                                </div>
+                            </div>
+
+                            <div class="payment-content" id="invoice">
+                                <div class="invoice-info">
+                                    <p>Request a corporate invoice for your accounts payable department.</p>
+                                    <div class="form-group">
+                                        <label for="poNumber">PO Number (If applicable)</label>
+                                        <input type="text" id="poNumber" name="poNumber">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="billingDepartment">Billing Department Email</label>
+                                        <input type="email" id="billingDepartment" name="billingDepartment" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Enterprise Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span class="btn-text">Request Enterprise Setup</span>
+                            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enterprise CTA -->
+<section class="enterprise-cta">
+    <div class="container">
+        <div class="cta-content">
+            <div class="cta-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <h2>Need Enterprise Consultation?</h2>
+            <p>Our solutions team is ready to discuss your custom requirements</p>
+            <a href="/frontend/contact/contact.html" class="btn btn-secondary">Schedule Executive Call</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="/frontend/kx logo.png" alt="KX Studios Logo" class="footer-logo-img">
+                        <span class="logo-text">S<span>t</span>udios</span>
+                    </a>
+                    <p class="footer-description">
+                        Helping businesses transform their digital presence since 2015. We specialize in web design, social media management, and video production.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls " class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Video Production & Editing</a></li>
+                        <li><a href="#">SEO & Content Marketing</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-description">Subscribe to our newsletter to receive updates and marketing tips.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 KX Studios. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<!-- Scripts -->
+<script src="/frontend/script.js"></script>
+<script src="/frontend/checkout/checkout-enterprise.js"></script>
+</body> </html>

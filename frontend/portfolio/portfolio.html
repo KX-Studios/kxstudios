@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Portfolio | KX Studios</title>
+    <meta name="description" content="View our portfolio of web design, social media, and video production projects">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="portfolio/portfolio.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/frontend/index.html" class="logo">
+                    <img src="/frontend/kx logo.png" id="logo_image" alt="KX Studios Logo">
+                    <span class="logo-text">S<span>t</span>udios</span>
+                </a>
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                    <!--
+                        <li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>
+                    -->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (same as index.html) -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-container">
+            <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="nav-mobile">
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content">
+                <h1 class="reveal-left">Our <span class="highlight">Portfolio</span></h1>
+                <p class="reveal-left">Explore our collection of successful projects and client work</p>
+            </div>
+        </div>
+    </section>
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="var(--primary-color)"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="var(--primary-color)"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="var(--primary-color)"></path>
+        </svg>
+    </div>
+    <!-- Portfolio Gallery Section -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="video">Video Production</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 - Web Design -->
+                <div class="portfolio-item reveal-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://cdn.pixabay.com/photo/2019/10/07/12/08/online-shopping-4532460_640.jpg" alt="E-commerce Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>E-commerce Store</h3>
+                                <p>Complete online store with custom design</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Store</h3>
+                        <p>Web Design & Development</p>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Social Media -->
+                <div class="portfolio-item reveal-item" data-category="social">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/4549411/pexels-photo-4549411.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Fitness Brand Campaign</h3>
+                                <p>3-month social media strategy</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Fitness Brand Campaign</h3>
+                        <p>Social Media Management</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Video Production -->
+                <div class="portfolio-item reveal-item" data-category="video">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Product Video">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Product Launch Video</h3>
+                                <p>60-second promotional video</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Product Launch Video</h3>
+                        <p>Video Production</p>
+                    </div>
+                </div>
+                
+                <!-- Project 4 - Web Design -->
+                <div class="portfolio-item reveal-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Corporate Website</h3>
+                                <p>Modern responsive design</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Website</h3>
+                        <p>Web Design & Development</p>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - Branding -->
+                <div class="portfolio-item reveal-item" data-category="branding">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/7552373/pexels-photo-7552373.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Startup Brand Identity</h3>
+                                <p>Complete visual identity system</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Startup Brand Identity</h3>
+                        <p>Branding & Visual Design</p>
+                    </div>
+                </div>
+                
+                <!-- Project 6 - Social Media -->
+                <div class="portfolio-item reveal-item" data-category="social">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/4549414/pexels-photo-4549414.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instagram Strategy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Lifestyle Brand Strategy</h3>
+                                <p>6-month Instagram growth</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Lifestyle Brand Strategy</h3>
+                        <p>Social Media Management</p>
+                    </div>
+                </div>
+                
+                <!-- Project 7 - Video Production -->
+                <div class="portfolio-item reveal-item" data-category="video">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Video">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Corporate Overview Video</h3>
+                                <p>2-minute brand story</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Overview Video</h3>
+                        <p>Video Production</p>
+                    </div>
+                </div>
+                
+                <!-- Project 8 - Branding -->
+                <div class="portfolio-item reveal-item" data-category="branding">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/17845/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" alt="Logo Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Restaurant Branding</h3>
+                                <p>Logo & visual identity</p>
+                                <a href="project-details.html" class="portfolio-link">View Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Branding</h3>
+                        <p>Branding & Visual Design</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <p>Want to see more of our work?</p>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section class="portfolio-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-bottom">Client <span class="highlight">Testimonials</span></h2>
+                <p class="section-description">What our clients say about working with us</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"KX Studios transformed our online presence completely. Their web design expertise and social media strategy helped us triple our online sales in just 6 months."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Client" class="author-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Sarah Johnson</h4>
+                                <p class="author-title">CEO, Fashion Boutique</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The video production team at KX Studios captured our brand essence perfectly. The final product exceeded all our expectations and has been incredibly effective."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Client" class="author-img">
+                            <div class="author-info">
+                                <h4 class="author-name">Michael Brown</h4>
+                                <p class="author-title">Marketing Director, Tech Startup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="control-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="control-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- CTA Section -->
+    <section class="cta portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="reveal-left">Ready to start your project?</h2>
+                <p class="reveal-left">Let's create something amazing together</p>
+                <a href="pricing.html" class="btn btn-primary btn-lg reveal-right">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="/frontend/kx logo.png" alt="KX Studios Logo" class="footer-logo-img">
+                        <span class="logo-text">S<span>t</span>udios</span>
+                    </a>
+                    <p class="footer-description">
+                        Helping businesses transform their digital presence since 2015. We specialize in web design, social media management, and video production.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls " class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Video Production & Editing</a></li>
+                        <li><a href="#">SEO & Content Marketing</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-description">Subscribe to our newsletter to receive updates and marketing tips.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 KX Studios. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="/frontend/script.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Starter Plan | KX Studios</title>
+    <meta name="description" content="Complete your purchase of the Starter Plan from KX Studios">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/frontend/checkout/checkout.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="kx logo.jpg" id="logo_image" alt="KX Studios Logo">
+                    <span class="logo-text">KX <span>S</span>tudios</span>
+                </a>
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav> <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-container">
+            <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="nav-mobile">
+                <ul class="nav-menu">
+                    <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                    <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                    <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                    <!--<<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                    <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                    <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Checkout Hero -->
+    <section class="checkout-hero">
+        <div class="container">
+            <div class="checkout-hero-content">
+                <h1 class="reveal-left">Complete Your Purchase</h1>
+                <p class="reveal-left">Starter Plan - Everything you need to launch your digital presence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Main Section -->
+    <section class="checkout-main">
+        <div class="container">
+            <div class="checkout-grid">
+                <!-- Order Summary -->
+                <div class="order-summary reveal-left">
+                    <h2>Order Summary</h2>
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3>Starter Plan</h3>
+                            <div class="plan-price">
+                                <span class="price">R2,499</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Custom Website (5 pages)</li>
+                                <li><i class="fas fa-check"></i> Social Media (2 platforms)</li>
+                                <li><i class="fas fa-check"></i> 1 Video per month</li>
+                                <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                                <li><i class="fas fa-check"></i> Monthly Reports</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="billing-options">
+                        <h3>Billing Cycle</h3>
+                        <div class="billing-toggle">
+                            <label class="billing-option">
+                                <input type="radio" name="billing" value="monthly" checked>
+                                <span class="billing-label">Monthly</span>
+                                <span class="billing-price">R2,499/month</span>
+                            </label>
+                            <label class="billing-option">
+                                <input type="radio" name="billing" value="annual">
+                                <span class="billing-label">Annual (Save 20%)</span>
+                                <span class="billing-price">R1,999/month</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="order-total">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span class="subtotal">R2,499</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Setup Fee</span>
+                            <span>R1,500</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total Due Today</span>
+                            <span class="total-amount">R3,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checkout Form -->
+                <div class="checkout-form-container reveal-right">
+                    <h2>Payment Information</h2>
+                    <form id="checkoutForm" class="checkout-form">
+                        <!-- Contact Information -->
+                        <div class="form-section">
+                            <h3>Contact Information</h3>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <!-- Billing Information -->
+                        <div class="form-section">
+                            <h3>Billing Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postalCode">Postal Code</label>
+                                    <input type="text" id="postalCode" name="postalCode" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" name="country" required>
+                                    <option value="" disabled selected>Select Country</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="US">United States</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <!-- Add more countries as needed -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="form-section">
+                            <h3>Payment Method</h3>
+                            <div class="payment-methods">
+                                <div class="payment-tabs">
+                                    <!--
+                                    <button type="button" class="payment-tab active" data-tab="credit-card">
+                                        <i class="far fa-credit-card"></i> Credit Card
+                                    </button>
+                                    -->
+                                    <button type="button" class="payment-tab" data-tab="paypal">
+                                        <i class="fab fa-paypal"></i> PayPal
+                                    </button>
+                                    <button type="button" class="payment-tab" data-tab="bank-transfer">
+                                        <i class="fas fa-university"></i> Bank Transfer
+                                    </button>
+                                </div>
+
+                                <!--
+                                <div class="payment-content active" id="credit-card">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" id="cardNumber" name="cardNumber"
+                                            placeholder="1234 5678 9012 3456">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiryDate">Expiry Date</label>
+                                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="123">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cardName">Name on Card</label>
+                                        <input type="text" id="cardName" name="cardName">
+                                    </div>
+                                </div>
+                                -->
+
+                                <div class="payment-content" id="paypal">
+                                    <div class="paypal-info">
+                                        <p>You will be redirected to PayPal to complete your payment securely.</p>
+                                        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg"
+                                            alt="PayPal">
+                                    </div>
+                                </div>
+
+                                <div class="payment-content" id="bank-transfer">
+                                    <div class="bank-info">
+                                        <p>Please use the following bank details for your transfer:</p>
+                                        <ul>
+                                            <li><strong>Bank:</strong> Standard Bank</li>
+                                            <li><strong>Account Name:</strong> KX Studios (Pty) Ltd</li>
+                                            <li><strong>Account Number:</strong> 123456789</li>
+                                            <li><strong>Branch Code:</strong> 012345</li>
+                                            <li><strong>Reference:</strong> Your email address</li>
+                                        </ul>
+                                        <p>Your order will be processed once payment is received.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="form-group terms">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy
+                                    Policy</a></label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span class="btn-text">Complete Purchase</span>
+                                <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="/frontend/kx logo.png" alt="KX Studios Logo" class="footer-logo-img">
+                        <span class="logo-text">S<span>t</span>udios</span>
+                    </a>
+                    <p class="footer-description">
+                        Helping businesses transform their digital presence since 2015. We specialize in web design, social media management, and video production.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls " class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Video Production & Editing</a></li>
+                        <li><a href="#">SEO & Content Marketing</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/frontend/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/services/services.html" class="nav-link active">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-description">Subscribe to our newsletter to receive updates and marketing tips.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 KX Studios. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="/frontend/script.js"></script>
+    <script src="/frontend/checkout/checkout.js"></script>
+</body>
+
+</html>
